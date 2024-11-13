@@ -14,19 +14,19 @@ function App() {
   return (
     <CartContextProvider>
       <BrowserRouter>
-        <NavBar />
-        <Titulo titulo={"Titulo de Prueba test "} />
-        {/* <Carta/> */}
-        <Routes>
-          <Route path={"/"} element={<ItemListContainer />} />
-          <Route path={"/category/:id"} element={<ItemListContainer />} />
-          <Route path={"/item/:id"} element={<ItemDetailContainer />} />
-          <Route path={"/cart"} element={<Cart />} />
-          <Route path={"/checkout"} element={<Checkout />} />
-          <Route path={"*"} element={<Error404 />} />
-        </Routes>
-        <Carta />
-        <Footer />
+          <NavBar/>
+          <Titulo titulo={"Titulo Test"}/>
+          {/* <Carta/> */}
+          <Routes>
+            <Route path={"/"} element={<ItemListContainer/>} />
+            <Route path={"/category/:id"} element={<ItemListContainer/>} />
+            <Route path={"/item/:id"} element={<ItemDetailContainer/>} />
+            <Route path={"/cart"} element={<Cart/>} />
+            <Route path={"/checkout"} element={<Checkout />} />
+            <Route path={"*"} element={<Error404/>} />
+          </Routes>
+          <Carta/>
+          <Footer/>
       </BrowserRouter>
     </CartContextProvider>
   );
