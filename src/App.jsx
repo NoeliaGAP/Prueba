@@ -15,7 +15,7 @@ function App() {
     <CartContextProvider>
       <BrowserRouter>
         <NavBar />
-        <Titulo titulo={"Titulo de Prueba modificado"} />
+        <Titulo titulo={"Titulo de Prueba modificado otra vez"} />
         {/* <Carta/> */}
         <Routes>
           <Route path={"/"} element={<ItemListContainer />} />
